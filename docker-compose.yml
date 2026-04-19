@@ -1,0 +1,13 @@
+services:
+  face:
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    networks:
+      - marketplace
+
+networks:
+  marketplace:
+    name: marketplace
+    external: true
